@@ -10,8 +10,8 @@ print("-" * 60)
 
 while True:
     num_pc = randint(0, 10)
-    num_user = input("Escoha um número de 0 a 10: ")
-    op = input("Escolha par[P] ou ímpar[I]: ").strip().upper()
+    num_user = input("Escolha um número de 0 a 10: ")
+    op = input("Escolha par[P] ou ímpar[I]: ").strip().upper()[0]
 
     if op.isalpha() and num_user.isnumeric():
         if op == "P" or op == "I":

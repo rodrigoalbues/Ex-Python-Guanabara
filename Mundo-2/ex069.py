@@ -11,7 +11,7 @@ pessoas = 0
 while True:
     print("=" * 60)
     idade = input("Idade: ")
-    sexo = input("Sexo [M/F]: ").upper().strip()
+    sexo = input("Sexo [M/F]: ").upper().strip()[0]
 
     if idade.isnumeric() and (sexo == "M" or sexo == "F"):
         idade = int(idade)
@@ -24,7 +24,7 @@ while True:
             m_menor20 += 1
         print("Cadastro realizado com sucesso!")
         print("")
-        continuar = input("Gostaria de continuar?[S/N] ").upper().strip()
+        continuar = input("Gostaria de continuar?[S/N] ").upper().strip()[0]
         print("")
 
         if continuar == "S" or continuar == "N":
