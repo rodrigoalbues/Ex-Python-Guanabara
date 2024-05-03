@@ -24,11 +24,28 @@ num_ext = (
     "vinte",
 )
 print("=" * 60)
-num = input("Digite um número de 0 a 20: ")
 
-if num.isnumeric():
-    num = int(num)
-    print(f"O número {num} escrito por extenso é: {num_ext[num]}")
-    print("=" * 60)
-else:
-    print("Informação incorreta!")
+while True:
+
+    num = input("Digite um número de 0 a 20: ")
+
+    if num.isnumeric():
+        num = int(num)
+        if num >= 0 and num <= 20:
+            print(f"O número {num} escrito por extenso é: {num_ext[num]}")
+            print("")
+            continuar = input("Quer continuar [S/N] ? ").upper().strip()
+            print("=" * 60)
+            if continuar and continuar[0] in ("SN"):
+                if continuar == "N":
+                    break
+            else:
+                print("Informação inválida. Tente novamente!")
+                print("")
+
+        else:
+            print("Informação inválida. Tente novamente!")
+            print("")
+    else:
+        print("Informação incorreta!")
+        print("")

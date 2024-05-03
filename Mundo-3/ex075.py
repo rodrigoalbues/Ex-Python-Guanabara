@@ -16,16 +16,16 @@ if n1.isnumeric() and n2.isnumeric() and n3.isnumeric() and n4.isnumeric():
     n4 = int(n4)
     numeros = (n1, n2, n3, n4)
 
-    cont9 = 0
-    pos_do_3 = numeros.index(3)
-
-    for n in numeros:
-
-        if n == 9:
-            cont9 += 1
-        if n % 2 == 0:
-            print(f"Os números pares digitados foram: {n}")
+    cont9 = numeros.count(9)
     print(f"O número 9 apareceu {cont9} vezes.")
-    print(f"O número 3 apareceu pela primeira vez na posição {pos_do_3}")
+    if 3 in numeros:
+        pos_do_3 = numeros.index(3)
+        print(f"O número 3 apareceu pela primeira vez na {pos_do_3 + 1}ª posição.")
+    print(f"Os números pares digitados foram: ", end="")
+    for n in numeros:
+        if n % 2 == 0:
+            print(n, end=" ")
+
+
 else:
     print("Informação inválida!")
