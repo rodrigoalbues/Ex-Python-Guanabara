@@ -1,0 +1,1 @@
+"""Crie um prog onde o usuário possa digitar vários valores numéricos (perguntar se deseja continuar) e cadastre-os em uma lista. Caso o num já exista lá dentro, ele não será add. No final, serão exibidos todos os valores únicos digitados, em ordem crescente."""

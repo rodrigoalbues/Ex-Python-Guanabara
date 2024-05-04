@@ -1,0 +1,1 @@
+"""Crie um prog que vai ler vários num e colocar em uma lista. Depois disso, crie 2 listas extras que vão conter apenas os valores pares e os valores ímpares digitados, respectivamentes. Ao final, mostre o conteúdo das 3 listas geradas."""
