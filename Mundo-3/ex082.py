@@ -11,7 +11,7 @@ while True:
         numeros.append(num)
         print("Número adicionado com sucesso...")
         print("-" * 80)
-        continuar = input('Deseja continuar ("N" para parar)? ').upper().strip()
+        continuar = input("Deseja continuar [S/N]? ").upper().strip()
         print("")
         if continuar and continuar[0] == "N":
             break

@@ -10,6 +10,9 @@ while True:
             valores.append(valor)
             print("Valor cadastrado com sucesso...")
             print("")
+        else:
+            print("Elemento não adicionado, esse número já existe em sua lista!")
+            print("")
     else:
         print("Informação inválida!")
     continuar = input("Deseha contiuar? [S/N] ").upper().strip()
@@ -23,5 +26,5 @@ while True:
         break
     print("-" * 80)
 print("")
-print(f"Você digitou os valores {valores}")
+print(f"Você digitou os valores {sorted(valores)}")
 print("=" * 80)

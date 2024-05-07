@@ -14,16 +14,17 @@ while True:
         print("Número dicionado com sucesso...")
         print("")
         print("-" * 80)
-        continuar = input("Deseja continuar? [S/N]").upper().strip()
+        continuar = input("Deseja continuar? [S/N] ").upper().strip()
         print("")
         if continuar and continuar[0] in "SN":
             if continuar == "N":
                 break
         else:
             print("Informação inválida!")
-
+            print()
     else:
         print("Informação inválida!")
+        print()
 qtd = len(numeros)
 ordem = sorted(numeros, reverse=True)
 print(f"Você digitou {qtd} elementos, que foram {numeros}.")
