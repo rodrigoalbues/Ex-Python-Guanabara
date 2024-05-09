@@ -1,0 +1,1 @@
+"""Faça um prog que ajude um jogador da mega sena a criar palpites. O programa vai perguntar quantos jogos serão gerados e vai sortear 6 nr entre 1 e 60 p/ cada jogo, cadastrando tudo em uma lista composta."""
