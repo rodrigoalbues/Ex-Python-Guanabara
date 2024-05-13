@@ -1,0 +1,1 @@
+"""Crie um prog que gerencie o aproveitamento de um jogador de futebol. O prog vai ler o nome dele e qts partidas ele jogou. Depois vai ler a qtd de gols feitos em cada partida. No final, tudo isso será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato."""

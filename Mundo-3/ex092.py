@@ -1,0 +1,1 @@
+"""Crie um prog que leia nome, ano de nasc e carteira de trab e cadastre-os (com idade) em um dicionário se por acaso a CTPS for diferente de 0, o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar."""

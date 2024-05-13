@@ -1,6 +1,7 @@
 """Faça um prog que ajude um jogador da mega sena a criar palpites. O programa vai perguntar quantos jogos serão gerados e vai sortear 6 nr entre 1 e 60 p/ cada jogo, cadastrando tudo em uma lista composta."""
 
 from random import sample
+from time import sleep
 
 print("=" * 80)
 print("Gere seus jogos da Mega Sena!!!".center(80))
@@ -12,6 +13,9 @@ if qtd.isnumeric():
     for i in range(qtd):
         jogo = sorted(sample(range(1, 61), 6))
         print(f"Jogo {i + 1}: {jogo}")
+        sleep(0.8)
+else:
+    print("Informação inválida!")
 print()
 print("BOA SORTE!!!".center(80))
 print("=" * 80)

@@ -30,7 +30,10 @@ for i in range(0, 3):
         print("Informação inválida!")
         linha3[i].append("")
 print("-" * 80)
-print(linha1[0], linha1[1], linha1[2])
-print(linha2[0], linha2[1], linha2[2])
-print(linha3[0], linha3[1], linha3[2])
+
+print(
+    f"""[{str(linha1[0][0]).center(5)}] [{str(linha1[1][0]).center(5)}] [{str(linha1[2][0]).center(5)}]
+[{str(linha2[0][0]).center(5)}] [{str(linha2[1][0]).center(5)}] [{str(linha2[2][0]).center(5)}]
+[{str(linha3[0][0]).center(5)}] [{str(linha3[1][0]).center(5)}] [{str(linha3[2][0]).center(5)}]"""
+)
 print("=" * 80)
