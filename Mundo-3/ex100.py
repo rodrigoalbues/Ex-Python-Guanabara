@@ -1,0 +1,1 @@
+"""Faça um prog que tenha uma lista chamada números e 2 funções chamadas sorteio() e soma(). A 1ª função vai sortear 5 nrs e vai colocá-los dentro da lista e a 2ª função vai mostrar a soma entre todos os valores pares sorteados pela função anterior."""

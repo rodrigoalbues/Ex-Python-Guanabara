@@ -1,0 +1,1 @@
+'''Faça um prog que tenha uma função chamada escreva(), que receba um texto qualquer como paeâmetro e mostre uma msg com tamanho adaptável.'''
