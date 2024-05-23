@@ -5,10 +5,13 @@ nome = input("Nome: ")
 media = input(f"Média de {nome}: ")
 if media and nome:
     media = float(media)
-    if media < 7:
+    if media < 5:
         situacao = "Reprovado"
+    elif 5 <= media < 7:
+        situacao = "Recuperação"
     else:
         situacao = "Aprovado"
+    print("-" * 60)
     aluno = {"Nome": nome, "Media": media, "situacao": situacao}
     print(
         f"""O nome do aluno é: {aluno["Nome"]}.
