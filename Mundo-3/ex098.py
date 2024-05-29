@@ -24,19 +24,25 @@ contador(10, -2, -2)
 print("FIM!")
 print("-" * 60)
 print("Agora é sua vez de personalizar a contagem!")
-inicio = input("Início: ")
-fim = input("Fim: ")
-passo = input("Passo: ")
-if inicio and fim and passo:
-    init = int(inicio)
-    final = int(fim)
-    intervalo = int(passo)
-    print()
+init = input("Início: ")
+final = input("Fim: ")
+intervalo = input("Passo: ")
+print(f"Contagem de {init} até {final} de {intervalo} em {intervalo}:")
+if init and final and intervalo:
+    init = int(init)
+    final = int(final)
+    intervalo = int(intervalo)
+    if intervalo == 0:
+        intervalo = 1
+    if init > final:
+        if intervalo > 0:
+            final = final - intervalo - 1
+            intervalo *= -1
+        else:
+            final = final + intervalo
+
     contador(init, final, intervalo)
     print("FIM!")
 else:
     print("Informação inválida!")
 print("=" * 60)
-
-
-falta!!!!
