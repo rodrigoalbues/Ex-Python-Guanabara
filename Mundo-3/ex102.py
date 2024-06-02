@@ -1,0 +1,1 @@
+"""Crie um prog que tenha uma função fatorial() que receba 2 parãmetros: o 1º que indique o nr a calcular e o outro chamado show, que será um valor lógico(opcional) indicando se será mostrado ou não na tela o processo de cálculo do fatorial."""
